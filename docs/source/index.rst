@@ -10,8 +10,8 @@ UJO - Social Login
    :maxdepth: 2
    :caption: Contents:
 
-Admin UI:
----------
+Admin UI
+--------
 
    1. Launch Admin UI: `Admin UI Console <https://console.tryciam.onewelcome.io/>`_
    2. Select the training tenant
@@ -30,14 +30,15 @@ Admin UI:
    7. Submit
 
 
-Broker client generation:
--------------------------
-   1. Postman generate access from root level
+Identity Broker Tulip Client configuration
+------------------------------------------
 
-   2. 
-   3. Generate the secret (must be 32 char long): https://passwords-generator.org/32-character
-   4. Replace the redirectUri with your POD URI in the following format: https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/login?return_from=Idbgoogle
+   1. Generate an ID Broker Access Token in Postman
+      .. image:: /img/image2.png
 
+   2. Generate a client secret (must be 32 character long): `Secret Generator <https://passwords-generator.org/32-character>`_
+   3. Replace the redirectUri with your POD URI in the following format: **https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/login?return_from=Idbgoogle**
+      .. image:: /img/image3.png
    5. 
    6. Send
 
