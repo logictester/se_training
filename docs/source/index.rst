@@ -18,7 +18,8 @@ Admin UI
    3. Identity Broker -> Identity Providers -> Add identity provider -> OpenID Connect
    4. Use the client/secret for all
    5. Load the well-known URL into the form: **https://accounts.google.com/.well-known/openid-configuration**
-   6. Add variant  
+   6. Add variant 
+    
       .. note::
          
          Variant name: **AUTHENTICATION**
@@ -34,10 +35,12 @@ Identity Broker Tulip Client configuration
 ------------------------------------------
 
    1. Generate an ID Broker Access Token in Postman
+
       .. image:: /img/image2.png
 
    2. Generate a client secret (must be 32 character long): `Secret Generator <https://passwords-generator.org/32-character>`_
    3. Replace the redirectUri with your POD URI in the following format: **https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/login?return_from=Idbgoogle**
+
       .. image:: /img/image3.png
    5. 
    6. Send
