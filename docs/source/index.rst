@@ -3,13 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-SE Training - Social Login documentation
-========================================
-
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+UJO - Social Login
+==================
 
 .. toctree::
    :maxdepth: 2
@@ -24,9 +19,7 @@ Admin UI:
    4. Use the client/secret for all
    5. Load the well-known URL into the form:
    https://accounts.google.com/.well-known/openid-configuration
-
-   6. Add variant
-   
+   6. Add variant  
       .. note::
          
          Variant name: **AUTHENTICATION**
@@ -34,7 +27,8 @@ Admin UI:
          Scope names: **openid profile email**
 
       .. image:: /img/image1.png
-   8. Submit
+   
+   7. Submit
 
 
 Broker client generation:
