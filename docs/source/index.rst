@@ -82,7 +82,7 @@ Tulip YAML configurations
 =======================================================================
    
       .. code:: JSON
-      
+
         {
           "schema": "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
           "subAttributes": [],
@@ -108,13 +108,18 @@ Tulip YAML configurations
 
 2. config/demo/credential.yaml:
 ===============================
-      
+    
+    .. code::
+
       iwelcome.opendj.ldap.objectclasses[increase the number]: objectidbgoogleId
-      
+
+    .. code::
       
       iwelcome.opendj.ldap.mappings[increase the number].from: '[''idbgoogleId'']'
       iwelcome.opendj.ldap.mappings[same number].to: idbgoogleId
       
+      
+    .. code:: JSON
       
       iwelcome.socialLinking.thales.idbgoogle.linkTemplateScim: |-
         {
@@ -146,7 +151,7 @@ Tulip YAML configurations
         }
       
       
-      
+    .. code::  
       
       iwelcome.socialProviders.thales.idbgoogle.clientId: "provided Google client ID"
       iwelcome.socialProviders.thales.idbgoogle.clientSecret: "provided Google client secret"
@@ -158,7 +163,8 @@ Tulip YAML configurations
       iwelcome.socialProviders.thales.idbgoogle.scope: email profile openid
       iwelcome.socialProviders.thales.idbgoogle.wellKnownApiUrl: https://accounts.google.com/.well-known/openid-configuration
       
-   2. config/demo/login-api.yaml:
+3. config/demo/login-api.yaml:
+==============================
 
        iwelcome.workflow.social.workflow-base-url.thales.training: https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training
       
