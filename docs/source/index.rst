@@ -8,8 +8,9 @@ UJO - Social Login
 
 .. toctree::
    :maxdepth: 3
-   :collapse: False
-   :caption: Contents:
+   :hidden:
+
+   index
 
 Admin UI
 ********
