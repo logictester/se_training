@@ -81,29 +81,30 @@ Tulip YAML configurations
 1. config/demo/application.yaml add schema under iwelcome.schema.thales
 =======================================================================
    
-   
-          {
-            "schema": "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
-            "subAttributes": [],
-            "primary": false,
+      .. code:: JSON
+      
+        {
+          "schema": "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
+          "subAttributes": [],
+          "primary": false,
+          "name": "idbgoogleId",
+          "type": "string",
+          "multiValued": false,
+          "description": "Holds value of user's IDB Google ID",
+          "readOnly": false,
+          "required": false,
+          "caseExact": true,
+          "unique": true,
+          "openamUserAttribute": {
+            "_id": null,
+            "attributeTypeOID": "1.3.6.1.4.1.44444.1.1.1.21",
+            "objectClassOID": "1.3.6.1.4.1.44444.100.1.1.21",
             "name": "idbgoogleId",
-            "type": "string",
-            "multiValued": false,
-            "description": "Holds value of user's IDB Google ID",
-            "readOnly": false,
-            "required": false,
-            "caseExact": true,
-            "unique": true,
-            "openamUserAttribute": {
-              "_id": null,
-              "attributeTypeOID": "1.3.6.1.4.1.44444.1.1.1.21",
-              "objectClassOID": "1.3.6.1.4.1.44444.100.1.1.21",
-              "name": "idbgoogleId",
-              "identifying": false
-            },
-            "idbgoogleMapping": "id",
-            "avmActive": false
+            "identifying": false
           },
+          "idbgoogleMapping": "id",
+          "avmActive": false
+        },
 
 2. config/demo/credential.yaml:
 ===============================
