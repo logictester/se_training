@@ -50,8 +50,15 @@ Identity Broker Tulip Client configuration
    4. Send
 
 
-OpenAM:
-   1. K9s -> port forward openam -> hosts file
+OpenAM
+------
+
+   1. Open K9s and port forward openam
+
+      .. caution::
+
+        Add the openam URL to your hosts file mapped to 127.0.0.1
+
    2. amadmin + where to find password?? (application.secrets.yaml)
    3. Top Realm -> Authentication -> Modules
    4. Add Module
