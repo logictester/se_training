@@ -21,7 +21,7 @@ Admin UI
 
       .. code-block::
 
-        **https://accounts.google.com/.well-known/openid-configuration**
+        https://accounts.google.com/.well-known/openid-configuration
 
    6. Add variant 
 
