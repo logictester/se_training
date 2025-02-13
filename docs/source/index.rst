@@ -13,12 +13,11 @@ UJO - Social Login
 Admin UI:
 ---------
 
-   1. Launch Admin UI -> https://console.tryciam.onewelcome.io/
+   1. Launch Admin UI: `Admin UI Console <https://console.tryciam.onewelcome.io/>`_
    2. Select the training tenant
    3. Identity Broker -> Identity Providers -> Add identity provider -> OpenID Connect
    4. Use the client/secret for all
-   5. Load the well-known URL into the form:
-   https://accounts.google.com/.well-known/openid-configuration
+   5. Load the well-known URL into the form: **https://accounts.google.com/.well-known/openid-configuration**
    6. Add variant  
       .. note::
          
