@@ -111,12 +111,12 @@ Tulip YAML configurations
     
     .. code::
 
-      iwelcome.opendj.ldap.objectclasses[**increase the number**]: objectidbgoogleId
+      iwelcome.opendj.ldap.objectclasses[increase the number]: objectidbgoogleId
 
     .. code::
       
-      iwelcome.opendj.ldap.mappings[**increase the number**].from: '[''idbgoogleId'']'
-      iwelcome.opendj.ldap.mappings[**same number**].to: idbgoogleId
+      iwelcome.opendj.ldap.mappings[increase the number].from: '[''idbgoogleId'']'
+      iwelcome.opendj.ldap.mappings[same number].to: idbgoogleId
       
       
     .. code:: JSON
