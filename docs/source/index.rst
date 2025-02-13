@@ -115,49 +115,47 @@ Tulip YAML configurations
       iwelcome.opendj.ldap.mappings[same number].to: idbgoogleId
       
       
-      
-      
-        iwelcome.socialLinking.thales.idbgoogle.linkTemplateScim: |-
-          {
-            "schemas": [
-              "urn:scim:schemas:core:1.0",
-              "urn:scim:schemas:extension:iwelcome:1.0",
-              "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
-              "urn:scim:schemas:extension:iwelcomeattributevaluemetadata:1.0"
-            ],
-            "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle": {
-              "idbgoogleId": "#userMap['id']"
-            }
+      iwelcome.socialLinking.thales.idbgoogle.linkTemplateScim: |-
+        {
+          "schemas": [
+            "urn:scim:schemas:core:1.0",
+            "urn:scim:schemas:extension:iwelcome:1.0",
+            "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
+            "urn:scim:schemas:extension:iwelcomeattributevaluemetadata:1.0"
+          ],
+          "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle": {
+            "idbgoogleId": "#userMap['id']"
           }
-        iwelcome.socialLinking.thales.idbgoogle.profileMapping: |-
-          {
-            "id": "#socialUser['sub']"
+        }
+      iwelcome.socialLinking.thales.idbgoogle.profileMapping: |-
+        {
+          "id": "#socialUser['sub']"
+        }
+      iwelcome.socialLinking.thales.idbgoogle.unlinkTemplateScim: |-
+        {
+          "schemas": [
+            "urn:scim:schemas:core:1.0",
+            "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle"
+          ],
+          "meta": {
+            "attributes": [
+              "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle:idbgoogleId"
+            ]
           }
-        iwelcome.socialLinking.thales.idbgoogle.unlinkTemplateScim: |-
-          {
-            "schemas": [
-              "urn:scim:schemas:core:1.0",
-              "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle"
-            ],
-            "meta": {
-              "attributes": [
-                "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle:idbgoogleId"
-              ]
-            }
-          }
+        }
       
       
       
       
       iwelcome.socialProviders.thales.idbgoogle.clientId: "provided Google client ID"
-        iwelcome.socialProviders.thales.idbgoogle.clientSecret: "provided Google client secret"
-        iwelcome.socialProviders.thales.idbgoogle.enabled: "true"
-        iwelcome.socialProviders.thales.idbgoogle.grantType: authorization_code
-        iwelcome.socialProviders.thales.idbgoogle.profileFields: id
-        iwelcome.socialProviders.thales.idbgoogle.redirectUri: https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/profile/security/google
-        iwelcome.socialProviders.thales.idbgoogle.responseType: code
-        iwelcome.socialProviders.thales.idbgoogle.scope: email profile openid
-        iwelcome.socialProviders.thales.idbgoogle.wellKnownApiUrl: https://accounts.google.com/.well-known/openid-configuration
+      iwelcome.socialProviders.thales.idbgoogle.clientSecret: "provided Google client secret"
+      iwelcome.socialProviders.thales.idbgoogle.enabled: "true"
+      iwelcome.socialProviders.thales.idbgoogle.grantType: authorization_code
+      iwelcome.socialProviders.thales.idbgoogle.profileFields: id
+      iwelcome.socialProviders.thales.idbgoogle.redirectUri: https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/profile/security/google
+      iwelcome.socialProviders.thales.idbgoogle.responseType: code
+      iwelcome.socialProviders.thales.idbgoogle.scope: email profile openid
+      iwelcome.socialProviders.thales.idbgoogle.wellKnownApiUrl: https://accounts.google.com/.well-known/openid-configuration
       
    2. config/demo/login-api.yaml:
 
