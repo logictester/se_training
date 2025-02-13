@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'SE Training - Social Login'
+project = 'SE Training - Hands On Labs'
 copyright = '2025, Gur Talmor and Alex Basin'
 author = 'Gur Talmor and Alex Basin'
 release = '0.1'
