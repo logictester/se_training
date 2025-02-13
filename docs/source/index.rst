@@ -75,9 +75,11 @@ OpenAM
    11. LDAP User Attributes, add idbgoogleId
    12. 
 
-Tulip YAML configurations:
+Tulip YAML configurations
+-------------------------
 
    1. config/demo/application.yaml add schema under iwelcome.schema.thales
+   ***********************************************************************
    
           {
             "schema": "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
@@ -102,7 +104,8 @@ Tulip YAML configurations:
             "avmActive": false
           },
 
-   1. config/demo/credential.yaml:
+   2. config/demo/credential.yaml:
+   *******************************
       
       iwelcome.opendj.ldap.objectclasses[increase the number]: objectidbgoogleId
       
