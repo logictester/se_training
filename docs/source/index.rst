@@ -151,7 +151,7 @@ Tulip YAML configurations
         }
       
       
-    .. code::  
+    .. code:: JSON
       
       iwelcome.socialProviders.thales.idbgoogle.clientId: "provided Google client ID"
       iwelcome.socialProviders.thales.idbgoogle.clientSecret: "provided Google client secret"
