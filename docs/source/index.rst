@@ -47,7 +47,7 @@ Identity Broker Tulip Client configuration
    3. Replace the redirectUri with your POD URI in the following format: **https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/login?return_from=Idbgoogle**
 
       .. image:: /img/image3.png 
-   6. Send
+   4. Send
 
 
 OpenAM:
