@@ -4,14 +4,14 @@
    contain the root `toctree` directive.
 
 UJO - Social Login
-==================
+##################
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
 Admin UI
---------
+********
 
    1. Launch Admin UI: `Admin UI Console <https://console.tryciam.onewelcome.io/>`_
    2. Select the training tenant
@@ -37,7 +37,7 @@ Admin UI
 
 
 Identity Broker Tulip Client configuration
-------------------------------------------
+******************************************
 
    1. Generate an ID Broker Access Token in Postman
 
@@ -51,7 +51,7 @@ Identity Broker Tulip Client configuration
 
 
 OpenAM
-------
+******
 
    1. Open K9s and port forward openam
 
@@ -76,10 +76,11 @@ OpenAM
    12. 
 
 Tulip YAML configurations
--------------------------
+*************************
 
-   1. config/demo/application.yaml add schema under iwelcome.schema.thales
-   ***********************************************************************
+1. config/demo/application.yaml add schema under iwelcome.schema.thales
+=======================================================================
+   
    
           {
             "schema": "urn:scim:schemas:extension:iwelcome:1.0:idbgoogle",
@@ -104,8 +105,8 @@ Tulip YAML configurations
             "avmActive": false
           },
 
-   2. config/demo/credential.yaml:
-   *******************************
+2. config/demo/credential.yaml:
+===============================
       
       iwelcome.opendj.ldap.objectclasses[increase the number]: objectidbgoogleId
       
