@@ -80,7 +80,7 @@ OpenAM
 Tulip YAML configurations
 *************************
 
-  .. warning::
+  .. danger::
 
     Please pay extra attention to indentation when working with YAML files. Incorrect indentation will cause errors and issues even if the build succeeds
 
