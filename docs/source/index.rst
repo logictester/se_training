@@ -62,11 +62,13 @@ OpenAM
         Add the openam URL to your hosts file mapped to 127.0.0.1
 
    2. Navigate to `OpenAM Management Console <http://localhost:8080/openam/console>`_
-   2. Username: **amadmin**, for password: decrypt *application.secrets.yaml* and retrieve the value of *iwelcome.openam.password*
-   3. :guilabel:`Top Level Realm` -> :guilabel:`Authentication` -> :guilabel:`Modules`
-   4. :guilabel:`+ Add Module`
-`
-   5. 
+
+   3. Username: **amadmin**, for password: decrypt *application.secrets.yaml* and retrieve the value of *iwelcome.openam.password*
+   4. :guilabel:`Top Level Realm` -> :guilabel:`Authentication` -> :guilabel:`Modules`
+   5. :guilabel:`+ Add Module`
+      
+      .. image:: /img/image4.png
+       
    6. Configs - use tulip as client and the secret generated above
 
    7. 
