@@ -87,7 +87,7 @@ OpenAM
 
    6. Configs: use **tulip** as client and the secret generated :ref:`here <Secret>`
 
-   7. 
+      .. image:: /img/image5.png
    
    8. Add OpenDJ class data: Top Realm -> Data Stores -> OpenDJ
    9. LDAP User Object Class, add objectidbgoogleId
