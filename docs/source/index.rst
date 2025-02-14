@@ -72,6 +72,7 @@ OpenAM
       .. note::
 
         Name: IdbgoogleSocialAuthentication
+        
         Type: OAuth 2.0 / OpenID Connect
       
       .. image:: /img/image4.png
