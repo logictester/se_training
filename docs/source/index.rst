@@ -45,6 +45,8 @@ Identity Broker Tulip Client configuration
 
       .. image:: /img/image2.png
 
+.. _Secret:
+
    2. Generate a client secret (must be 32 character long): `Secret Generator <https://passwords-generator.org/32-character>`_
    3. Replace the redirectUri with your POD URI in the following format: **https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training/login?return_from=Idbgoogle**
 
@@ -66,10 +68,15 @@ OpenAM
    3. Username: **amadmin**, for password: decrypt *application.secrets.yaml* and retrieve the value of *iwelcome.openam.password*
    4. :guilabel:`Top Level Realm` -> :guilabel:`Authentication` -> :guilabel:`Modules`
    5. :guilabel:`+ Add Module`
+
+      .. note::
+
+        Name: IdbgoogleSocialAuthentication
+        Type: OAuth 2.0 / OpenID Connect
       
       .. image:: /img/image4.png
-       
-   6. Configs - use tulip as client and the secret generated above
+
+   6. Configs: use **tulip** as client and the secret generated :ref:`here <Secret>`
 
    7. 
    
