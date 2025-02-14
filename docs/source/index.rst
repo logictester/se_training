@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-UJO - Social Login
+Social Login
 ##################
 
 .. toctree::
@@ -196,10 +196,13 @@ Tulip YAML configurations
 3. config/demo/login-api.yaml:
 ==============================
 
+      .. code:: JSON
+
        iwelcome.workflow.social.workflow-base-url.thales.training: https://productpod-se-training-name-deployment.tryciam.onewelcome.io/training
       
+      .. code:: JSON
    
-      iwelcome.loginModules.socialOptions: |-
+        iwelcome.loginModules.socialOptions: |-
           [
             {
               "moduleName": "IdbgoogleSocialAuthentication",
@@ -209,64 +212,75 @@ Tulip YAML configurations
    
       
       
-      Under:
+Under:
       
       
        iwelcome.loginModules.openam.thales: |-
       
-      Add:
+Add:
+
+      .. code:: JSON
       
-           {
-             "moduleName": "IdbgoogleSocialAuthentication",
-             "authType": "module",
-             "authName": "IdbgoogleSocialAuthentication",
-             "payload": {
-               "authId": "%s",
-               "state": "%s",
-               "code": "%s"
-             }
-           },
+         {
+           "moduleName": "IdbgoogleSocialAuthentication",
+           "authType": "module",
+           "authName": "IdbgoogleSocialAuthentication",
+           "payload": {
+             "authId": "%s",
+             "state": "%s",
+             "code": "%s"
+           }
+         },
       
-      Under:
+Under:
       
       iwelcome.loginModules.api.thales.training: |-
       
-      Add:
-      
-           {
-             "moduleName": "IdbgoogleSocialAuthentication",
-             "requiredFields": [
-               "state",
-               "code"
-             ],
-             "uri": "idbgoogle",
-             "screenToUse": "Version1"
-           },
-      
-   1. config/demo/opendj-userstore.yaml
-   Add:
-   
-   schema: |
-     dn: cn=schema
-     objectClass: top
-     objectClass: ldapSubentry
-     objectClass: subschema
-     cn: schema
-     attributeTypes: ( 1.3.6.1.4.1.44444.1.1.1.21 NAME 'idbgoogleId' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 USAGE userApplications )
-     objectClasses: ( 1.3.6.1.4.1.44444.100.1.1.21 NAME 'objectidbgoogleId' SUP top AUXILIARY MAY (idbgoogleId) )
-   
-   2. config/demo/workflowapi.secrets.yaml - decode -> add -> encode
+Add:
 
-            "find_user_by_email_2": {
-                "request": {
-                    "method": "GET",
-                    "endpoint": "http://ums:8091/v2/Users/?filter=emails eq \"{email}\"",
-                    "urlPlaceholders": {
-                        "email": "#execution['user']['emails']"
-                    }
-                },
-                "responseContainer": "internalUser"
+      .. code:: JSON
+      
+         {
+           "moduleName": "IdbgoogleSocialAuthentication",
+           "requiredFields": [
+             "state",
+             "code"
+           ],
+           "uri": "idbgoogle",
+           "screenToUse": "Version1"
+         },
+      
+4. config/demo/opendj-userstore.yaml
+====================================
+
+Add:
+
+      .. code:: JSON
+   
+         schema: |
+           dn: cn=schema
+           objectClass: top
+           objectClass: ldapSubentry
+           objectClass: subschema
+           cn: schema
+           attributeTypes: ( 1.3.6.1.4.1.44444.1.1.1.21 NAME 'idbgoogleId' EQUALITY caseIgnoreMatch ORDERING caseIgnoreOrderingMatch SUBSTR caseIgnoreSubstringsMatch SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 USAGE userApplications )
+           objectClasses: ( 1.3.6.1.4.1.44444.100.1.1.21 NAME 'objectidbgoogleId' SUP top AUXILIARY MAY (idbgoogleId) )
+   
+5. config/demo/workflowapi.secrets.yaml - decode -> add -> encode
+=================================================================
+
+      .. code:: JSON
+
+        "find_user_by_email_2": {
+            "request": {
+                "method": "GET",
+                "endpoint": "http://ums:8091/v2/Users/?filter=emails eq \"{email}\"",
+                "urlPlaceholders": {
+                    "email": "#execution['user']['emails']"
+                }
             },
+            "responseContainer": "internalUser"
+        },
 
    5. config/demo/workflowapi.yaml
 
