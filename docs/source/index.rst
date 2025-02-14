@@ -89,12 +89,17 @@ OpenAM
 
       .. image:: /img/image5.png
    
-   8. Add OpenDJ class data: Top Realm -> Data Stores -> OpenDJ
-   9. LDAP User Object Class, add objectidbgoogleId
-   10. 
+   7. Add OpenDJ class data: :guilabel:`Top Level Realm` -> :guilabel:`Data Stores` -> :guilabel:`OpenDJ`
 
-   11. LDAP User Attributes, add idbgoogleId
-   12. 
+   8. LDAP User Object Class, add **objectidbgoogleId**
+   
+      .. image:: /img/image6.png
+
+   9. LDAP User Attributes, add **idbgoogleId**
+
+      .. image:: /img/image7.png
+
+   10. Save
 
 Tulip YAML configurations
 *************************
