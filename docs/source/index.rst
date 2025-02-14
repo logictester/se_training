@@ -80,6 +80,10 @@ OpenAM
 Tulip YAML configurations
 *************************
 
+  .. warning::
+
+    Please pay extra attention to indentation when working with YAML files. Incorrect indentation will cause errors and issues even if the build succeeds
+
 1. config/demo/application.yaml add schema under iwelcome.schema.thales
 =======================================================================
    
